@@ -1,0 +1,38 @@
+table,td, th {
+    width: 44rem;
+    height: 3rem;
+    border: 1px solid #ccc;
+    text-align: center;
+    border: 1px solid black;
+
+  }
+  th {
+    background: lightblue;
+    border-color: white;
+  }
+  body {
+    padding: 1rem;
+  }
+  /* tbody{ */
+    /* margin: 0;
+    height: 10vh;
+    width: 100vw; */
+    /* display: flex;  */
+    /* justify-content: center;
+    align-items: center;
+    margin-left: 0%;
+    margin-right: 0%; */
+    /* text-align: center;
+  } */
+
+  /*.container{
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    left:300px;
+  }*/
+  .tb{
+    position:relative;
+    left:50px;
+    top:25px;
+  }

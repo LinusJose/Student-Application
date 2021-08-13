@@ -1,0 +1,94 @@
+.body{
+    margin: 0 auto;
+  }
+   .register{
+   color:black;
+   vertical-align: middle;
+
+
+   }
+   .std{
+     text-align: center;
+     font-weight: 1000;
+     
+     font-style: unset;
+   }
+   
+  
+  .cnt {
+      position:absolute;
+      border:black;
+    
+      height: 450px ;
+      width: 350px;
+      padding: 25px;
+      background-color: rgb(129, 142, 172);
+      border-style: solid;
+      top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	
+	margin: auto;
+    text-align: center;
+  
+  
+     
+    }
+  
+  
+  
+    
+   .form-control{
+      width: 175px;
+      padding: 10px;
+      margin: 5px 0 10px 0;
+      border: none;
+      background: #f1f1f1;
+      display:flexbox;
+      position: relative;
+      right:80px ;
+      /* margin-right: 4cm; */
+      /* right:-1cm; */
+   
+      width: 300%;
+      /* left: 100px;  */
+     
+      
+    }
+    /* margin-left: 50;
+      margin-right: 50; */
+   
+    
+    
+    .btnG {
+        right: 50%;
+      background-color: #5a6460;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      display: block;
+          margin: 0 auto;
+      
+      
+    }
+    
+   
+    .btnB  {
+      background-color: grey;
+
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      display: block;
+          margin: 0 auto;
+          margin-top: 16px;
+
+         
+    }
+    
+  

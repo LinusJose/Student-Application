@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-sm-3">
+    <div *ngFor="let i of studentarray" class="card">
+      <div *ngIf="i.id==id" class="card-body">
+        <!-- <h5 class="card-title">Special title treatment</h5> -->
+        <p class="card-text">Name:{{i.name}}</p>
+        <p class="card-text">Class:{{i.class}}</p>
+        <!-- <p class="card-text"  >Mark:{{i.mark}}</p>  -->
+        <p [ngStyle]="{'background-color':i.mark > 50 ? 'green' : 'red' }" [ngClass]="isSpecial?'special':''">
+          Mark:{{i.mark}}</p>
+        <p class="card-text">Rank:{{i.rank}}</p>
+        <!-- <button (click)="backfn()">Back</button> -->
+
+      </div>
+    </div>
+  </div>

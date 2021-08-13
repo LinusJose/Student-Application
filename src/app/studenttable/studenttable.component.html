@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+      <div class="tb">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Class</th>
+            <th scope="col">Mark</th>
+            <th scope="col">Rank</th>
+
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr *ngFor="let obj of studentdetails">
+            <td>{{obj.id}}</td>
+            <td>{{obj.name}}</td>
+            <td>{{obj.class}}</td>
+            <td>{{obj.mark}}</td>
+            <td>{{obj.rank}}</td>
+            <!-- <button (click)="studData()">Details of {{obj.name}}</button> -->
+
+            <button [routerLink]="['/studentdata',obj.id]">View</button>
+
+
+          </tr>
+
+
+
+
+        </tbody>
+
+
+
+      </table>
+
+      <button (click)="createform()">Create Form</button>
+
+    </div>
+    </div>
+    <div class="col-2"></div>
+  </div>
+</div>

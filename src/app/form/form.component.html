@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <form action="handleFormDemo.html" method="post">
+    Name of student:
+    <input type="text" name="name" [(ngModel)]="name"><br />
+    <p>student name:{{name}}</p>
+
+    Age:
+    <input type="text" name="name" [(ngModel)]="age"><br />
+    <p>age:{{age}}</p>
+
+
+    <!-- Password:
+      <input type="password" name="password"><br />
+      <br /> -->
+    Choose gender<br />
+    Male
+    <input type="radio" name="color" [(ngModel)]="gender" value="male"><br />
+    Female
+    <input type="radio" name="color" [(ngModel)]="gender" value="female"><br />
+   
+    Other
+    <input type="radio" name="color" [(ngModel)]="gender" value="other"><br />
+    <br />
+
+    <p>gender selected:{{gender}}</p>
+
+    Select Department<br />
+    <select name="dept">
+      <option>Management</option>
+      <option>Computer</option>
+      <option>Science</option>
+    </select>
+    <br /><br />
+    Choose {{feature}}<br />
+    BBA
+    <input type="checkbox" name="features[]" value="1"><br />
+    MBA
+    <input type="checkbox" name="features[]" value="2"><br />
+    BCA
+    <input type="checkbox" name="features[]" value="2"><br />
+    MCA
+    <input type="checkbox" name="features[]" value="2"><br />
+
+    
+    <label for="attach">Attachment file:</label>
+    <input type="file" id="attach"> <br>
+    <input type="submit" (click)="register()" value="Submit">
+  </form>
+</body>
+
+</html>
+
+
+
+
+<!-- <input id="firstname" type="text" class="text" [value]="name1" (change)="name1Change($event)" placeholder="first Name"><br><br>
+<input id="lasttname" type="text" class="text" [value]="name2"  (change)="name2Change($event)" placeholder="Last Name"><br><br>
+
+<label for="psw-repeat"><b>Gender </b></label>
+      <input type="radio" id="" name="fav_language" [(ngModel)]="gender" [ngValue]="male">
+      <label for="html">Male</label>
+      <input type="radio" id=""  name="fav_language" [ngValue]="female">
+      <label for="css">Female</label><br> -->

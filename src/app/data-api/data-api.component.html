@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Serialno</th>
+                        <th scope="col">BankName</th>
+                        <th scope="col">BankAcNo</th>
+                        <th scope="col">BankAcType</th>
+                        <th scope="col">BranchAddress1</th>
+                        <th scope="col">BIFSCCode</th>
+                        <th scope="col">OnlinePayoutRegistered</th>
+                        <th scope="col">Remarks</th>
+
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr *ngFor="let obj of userDetail">
+                        <td>{{obj.Serialno}}</td>
+                        <td>{{obj.BankName}}</td>
+                        <td>{{obj.BankAcNo}}</td>
+                        <td>{{obj.BankAcType}}</td>
+                        <td>{{obj.BranchAddress1}}</td>
+                        <td>{{obj.BIFSCCode}}</td>
+                        <td>{{obj.OnlinePayoutRegistered}}</td>
+                        <td>{{obj.Remarks}}</td>
+                        <!-- <button (click)="studData()">Details of {{obj.name}}</button> -->
+
+                        <!-- <button [routerLink]="['/studentdata',obj.id]">View</button> -->
+
+
+
+                    </tr>
+
+
+                </tbody>
+
+            </table>
+        </div>
+        <div class="col-4"></div>
+
+
+    </div>
+</div>
